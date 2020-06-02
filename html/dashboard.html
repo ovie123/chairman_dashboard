@@ -87,20 +87,20 @@
               <div class="text-center m-b">
                 <div class="btn-group" data-toggle="buttons"
                   style='display: flex;flex-direction: column;margin-top:-30px;'>
-                  <label class="btn btn-sm white "
-                    style='width: 70%; align-self: center;font-size: 15px;border: 1px solid darkslategrey; border-radius: 5px;'>
+                  <label class="btn btn-sm white"
+                    style='width: 80%; align-self: center;font-size: 15px;border: 1px solid darkslategrey; border-radius: 5px;'>
                     Assessment Value YTD
                     <div>-----------------</div>
                   </label>
                   <label class="btn btn-sm white "
-                    style='width: 70%; align-self: center;font-size: 15px;border: 1px solid darkslategrey; border-radius: 5px;'>
+                    style='width: 80%; align-self: center;font-size: 15px;border: 1px solid darkslategrey; border-radius: 5px;'>
                     Amount
 
                     <div>-----------------</div>
 
                   </label>
                   <label class="btn btn-sm white "
-                    style='width: 70%; align-self: center;font-size: 15px;border: 1px solid darkslategrey;; border-radius: 5px;'>
+                    style='width: 80%; align-self: center;font-size: 15px;border: 1px solid darkslategrey;; border-radius: 5px;'>
 
 
                     Net Direct Assessment Position
@@ -129,7 +129,7 @@
                 <div class="btn-group" data-toggle="buttons"
                   style='display: flex; flex-direction: column;margin-top:-30px;'>
                   <label class="btn btn-sm white "
-                    style='width: 70%; align-self: center;font-size: 15px;border: 1px solid darkslategrey; border-radius: 5px;'>
+                    style='width: 80%; align-self: center;font-size: 15px;border: 1px solid darkslategrey; border-radius: 5px;'>
 
                     Months
                     <div>--------------</div>
@@ -144,12 +144,12 @@
 
                   </label>
                   <label class="btn btn-sm white "
-                    style='width: 70%; align-self: center;font-size: 15px;border: 1px solid darkslategrey; border-radius: 5px;'>
+                    style='width: 80%; align-self: center;font-size: 15px;border: 1px solid darkslategrey; border-radius: 5px;'>
                     Month on Month Collections
                     <div>---------------</div>
                   </label>
                   <label class="btn btn-sm white "
-                    style='width: 70%; align-self: center;font-size: 15px;border: 1px solid darkslategrey; border-radius: 5px;'>
+                    style='width: 80%; align-self: center;font-size: 15px;border: 1px solid darkslategrey; border-radius: 5px;'>
                     %Difference
                     <div>------------</div>
                   </label>
@@ -166,6 +166,35 @@
           </div>
         </div>
 
+        <div class="col-sm-6 col-md-4">
+          <div class="box" style='height: 450px;padding-top: 30px;'>
+            <div class="box-header">
+              <h3>Collections Chart</h3>
+              <small>Calculated in the last 30 days</small>
+            </div>
+            <div class="box-body">
+              <div ui-jp="plot" style='height:280px' ui-refresh="app.setting.color" ui-options="
+                      [
+                        { 
+                          data: [[1, 2], [2, 1.6], [3, 2.4], [4, 2.1], [5, 1.7], [6, 1.5], [7, 1.7]], 
+                          points: { show: true, radius: 3}, 
+                          splines: { show: true, tension: 0.45, lineWidth: 0, fill: 0.4} 
+                        }
+                      ], 
+                      {
+                        colors: ['#0cc2aa'],
+                        series: { shadowSize: 3 },
+                        xaxis: { show: true, font: { color: '#ccc' }, position: 'bottom' },
+                        yaxis:{ show: true, font: { color: '#ccc' }, min:1},
+                        grid: { hoverable: true, clickable: true, borderWidth: 0, color: 'rgba(120,120,120,0.5)' },
+                        tooltip: true,
+                        tooltipOpts: { content: '%x.0 is %y.4',  defaultTheme: false, shifts: { x: 0, y: -40 } }
+                      }
+                    " style="height:200px">
+              </div>
+            </div>
+          </div>
+        </div>
 
 
 
@@ -186,13 +215,27 @@
                   </label> -->
 
                   <label class="btn btn-sm white "
-                    style='width: 70%; align-self: center;font-size: 15px;border: 1px solid darkslategrey; border-radius: 5px;margin-top: -30px;'>
+                    style='width: 80%; align-self: center;font-size: 15px;border: 1px solid darkslategrey; border-radius: 5px;margin-top: -30px;'>
                     Taxpayers count
                     <div>---------------</div>
                   </label>
                   <label class="btn btn-sm white "
-                    style='width: 70%; align-self: center;font-size: 15px;border: 1px solid darkslategrey; border-radius: 5px;'>
+                    style='width: 80%; align-self: center;font-size: 15px;border: 1px solid darkslategrey; border-radius: 5px;'>
                     Taxpayer's type
+                    <div>---------------</div>
+                  </label>
+                  <label class="btn btn-sm white "
+                    style='width: 80%; align-self: center;font-size: 15px;border: 1px solid darkslategrey; border-radius: 5px;'>
+                    Registered Taxpayers for 5 months
+                    <div>---------------</div>
+                    <div>---------------</div>
+                    <div>---------------</div>
+                    <div>---------------</div>
+                    <div>---------------</div>
+                  </label>
+                  <label class="btn btn-sm white "
+                    style='width: 80%; align-self: center;font-size: 15px;border: 1px solid darkslategrey; border-radius: 5px;'>
+                    Count
                     <div>---------------</div>
                   </label>
                 </div>
@@ -204,56 +247,6 @@
                     <div>Months</div>
                     <div>Count</div>
                   </label> -->
-                  <label class="btn btn-sm white "
-                    style='width: 70%; align-self: center;font-size: 15px;border: 1px solid darkslategrey; border-radius: 5px;margin-top: -20px;'>
-                    Registered Taxpayers for 5 months
-                    <div>---------------</div>
-                  </label>
-                  <label class="btn btn-sm white "
-                    style='width: 70%; align-self: center;font-size: 15px;border: 1px solid darkslategrey; border-radius: 5px;'>
-                    Months
-                    <div>---------------</div>
-                    <div>---------------</div>
-                    <div>---------------</div>
-                    <div>---------------</div>
-                    <div>---------------</div>
-                  </label>
-                  <label class="btn btn-sm white "
-                    style='width: 70%; align-self: center;font-size: 15px;border: 1px solid darkslategrey; border-radius: 5px;'>
-                    Count
-                    <div>---------------</div>
-                  </label>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-6 col-md-4">
-          <div class="box" style="height: 450px;">
-            <div class="box-header">
-              <h3 style="text-align: center;">Taxpayers</h3>
-              <small style="text-align: center;">Calculated in last 30 days</small>
-            </div>
-
-            <div class="box-body">
-              <div class="text-center m-b">
-                <div class="btn-group" data-toggle="buttons">
-                  <label class="btn btn-sm white">
-                    Monthly Collections for 5 Months
-                    <div>Taxpayers Count for Individual and Non-individual</div>
-                    <div>Taxpayer's Type</div>
-                  </label>
-
-                </div>
-              </div>
-              <div class="text-center m-b">
-                <div class="btn-group" data-toggle="buttons">
-                  <label class="btn btn-sm white">
-                    Registered Taxpayers for 5 months
-                    <div>Months</div>
-                    <div>Count</div>
-                  </label>
 
                 </div>
               </div>
@@ -293,15 +286,6 @@
           </div>
         </div>
 
-
-
-
-
-
-
-
-
-
         <div class="col-sm-6 col-md-4">
           <div class="box" style="height: 450px;">
             <div class="box-header">
@@ -333,6 +317,14 @@
             </div>
           </div>
         </div>
+
+
+
+
+
+
+
+
 
 
 

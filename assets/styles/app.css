@@ -7309,8 +7309,12 @@ fieldset[disabled] .md-switch input + i:after {
     font-size: 15px !important;
     margin-left: 2px !important;
   }
-}
 
-.box-header h3 {
-  font-size: 18px !important;
+  .box-header h3 {
+    font-size: 18px !important;
+  }
+
+  .btn-group label {
+    width: 100% !important;
+  }
 }
