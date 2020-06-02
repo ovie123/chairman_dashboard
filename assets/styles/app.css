@@ -7317,4 +7317,12 @@ fieldset[disabled] .md-switch input + i:after {
   .btn-group label {
     width: 100% !important;
   }
+  .collect {
+    width: 100% !important;
+  }
+  .row h4,
+  th {
+    font-size: 15px !important;
+    font-weight: lighter !important;
+  }
 }
