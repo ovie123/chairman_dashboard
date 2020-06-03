@@ -38,6 +38,7 @@ body {
 .tpayer-img img {
   width: 12%;
   height: 12%;
+  margin-bottom: -10px;
 }
 
 @media screen and (max-width: 768px) {
@@ -68,27 +69,31 @@ body {
 
   .chart-img img {
     padding: 3px;
-    width: 10%;
-    height: 10%;
+    width: 14%;
+    height: 14%;
   }
   .chart-img {
     margin-left: 23px;
     margin-top: 12px;
   }
-  .collections img {
-    margin-bottom: 15px;
-    width: 10%;
-    height: 10%;
+  .collections {
+    margin-left: -8px;
   }
-  .direct-icon img {
-    width: 10%;
-    height: 10%;
+  .collections img {
     margin-bottom: 10px;
   }
-  .box-header h3 {
-    font-size: 10px !important;
+  .direct-icon img {
+    width: 15%;
+    height: 15%;
   }
-  .box-header small {
-    font-size: 8px !important;
+  .tpayer-img img {
+    width: 15%;
+    height: 15%;
+  }
+  .dash h4 {
+    font-size: 30px !important;
+  }
+  .dash small {
+    font-size: 18px !important;
   }
 }
