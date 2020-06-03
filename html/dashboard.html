@@ -80,45 +80,53 @@
 
 
         <div class="col-sm-6 col-md-4">
-          <div class="box" style="height: 450px;padding-top: 30px;">
-            <div class="box-header">
-              <h3 style="text-align: center;">COLLECTIONS
-              </h3>
-              <small style="text-align: center;font-size: 15px;">Monthly Collections for 5 Months</small>
-            </div>
+          <div class="box" style="height: 450px;">
+            <div class='collections-div'>
+              <div class="box-header">
+                <div class='collections'>
+                  <img src="../img/money.svg" alt="collections-icon">
+                </div>
+                <div class='collections-head' style='margin-top:-50px'>
+                  <h3 style="text-align: center;">COLLECTIONS
+                  </h3>
 
-            <div class="box-body">
-              <div class="text-center m-b">
-                <div class="btn-group" data-toggle="buttons"
-                  style='display: flex; flex-direction: column;margin-top:-30px;'>
-                  <label class="btn btn-sm white "
-                    style='width: 80%; align-self: center;font-size: 15px;border: 1px solid darkslategrey; border-radius: 5px;'>
-
-                    Months
-                    <div>--------------</div>
-                    <div>--------------</div>
-                    <div>--------------</div>
-                    <div>--------------</div>
-                    <div>--------------</div>
-                    <div>Amount</div>
-                    <div>-----------</div>
-                    <div>Total</div>
-                    <div>------------</div>
-
-                  </label>
-                  <label class="btn btn-sm white "
-                    style='width: 80%; align-self: center;font-size: 15px;border: 1px solid darkslategrey; border-radius: 5px;'>
-                    Month on Month Collections
-                    <div>---------------</div>
-                  </label>
-                  <label class="btn btn-sm white "
-                    style='width: 80%; align-self: center;font-size: 15px;border: 1px solid darkslategrey; border-radius: 5px;'>
-                    %Difference
-                    <div>------------</div>
-                  </label>
+                  <small style="text-align: center;font-size: 15px;">Monthly Collections for 5 Months</small>
                 </div>
               </div>
 
+              <div class="box-body">
+                <div class="text-center m-b">
+                  <div class="btn-group" data-toggle="buttons"
+                    style='display: flex; flex-direction: column;margin-top:-20px;'>
+                    <label class="btn btn-sm white "
+                      style='width: 80%; align-self: center;font-size: 15px;border: 1px solid darkslategrey; border-radius: 5px;'>
+
+                      Months
+                      <div>--------------</div>
+                      <div>--------------</div>
+                      <div>--------------</div>
+                      <div>--------------</div>
+                      <div>--------------</div>
+                      <div>Amount</div>
+                      <div>-----------</div>
+                      <div>Total</div>
+                      <div>------------</div>
+
+                    </label>
+                    <label class="btn btn-sm white "
+                      style='width: 80%; align-self: center;font-size: 15px;border: 1px solid darkslategrey; border-radius: 5px;'>
+                      Month on Month Collections
+                      <div>---------------</div>
+                    </label>
+                    <label class="btn btn-sm white "
+                      style='width: 80%; align-self: center;font-size: 15px;border: 1px solid darkslategrey; border-radius: 5px;'>
+                      %Difference
+                      <div>------------</div>
+                    </label>
+                  </div>
+                </div>
+
+              </div>
             </div>
             <div class="text-center m-b">
               <div class="btn-group" data-toggle="buttons">
@@ -130,12 +138,15 @@
         </div>
 
         <div class="col-sm-6 col-md-4">
-          <div class="box collect" style='height: 450px;padding-top: 30px;width: 204%;'>
-            <div class="box-header">
-              <h3>Collections Chart</h3>
+          <div class="box collect" style='height: 450px;padding-top: 10px;width: 205%;'>
+            <div class="chart-img">
+              <img src="../img/chart.png" alt="chart-icon">
+            </div>
+            <div class="box-header" style='margin-left: 80px; margin-top: 5px;'>
+              <h3>COLLECTIONS CHART</h3>
               <small>Calculated in the last 30 days</small>
             </div>
-            <div class="box-body">
+            <div class="box-body" style='margin-top: -35px;'>
               <div ui-jp="plot" style='height:280px' ui-refresh="app.setting.color" ui-options="
                       [
                         { 
@@ -170,7 +181,7 @@
                 <tr>
 
                   <th colspan="3">
-                    <h4 style="text-align: center;">Collections Table</h4>
+                    <h4 style="text-align: center;">COLLECTIONS TABLE</h4>
                   </th>
 
                 </tr>
@@ -302,9 +313,14 @@
         <div class="col-sm-6 col-md-4">
           <div class="box" style="height: 450px;width:100%;padding-top: 30px;">
             <div class="box-header">
-              <h3 style="text-align: center;">Direct Assessment
-              </h3>
-              <small style="text-align: center;">Calculated in last 30 days</small>
+              <div class='direct-icon'>
+                <img src="../img/naira.svg" alt="naira-icon">
+              </div>
+              <div class='direct-head' style='margin-top: -40px;'>
+                <h3 style="text-align: center;">DIRECT ASSESSMENT
+                </h3>
+                <small style="text-align: center;">Calculated in last 30 days</small>
+              </div>
             </div>
 
             <div class="box-body">
@@ -352,8 +368,13 @@
         <div class="col-sm-6 col-md-4">
           <div class="box" style="height: 450px;width:100%;padding-top: 30px;">
             <div class="box-header">
-              <h3 style="text-align: center;">Taxpayers</h3>
-              <small style="text-align: center;">Calculated in last 30 days</small>
+              <div class='tpayer-img'>
+                <img src="../img/tpayer.svg" alt="taxpayer logo">
+              </div>
+              <div class="t-payer-head" style='margin-top: -40px;'>
+                <h3 style="text-align: center;">TAXPAYERS</h3>
+                <small style="text-align: center;">Calculated in last 30 days</small>
+              </div>
             </div>
 
             <div class="box-body">
